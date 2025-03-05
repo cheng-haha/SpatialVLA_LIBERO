@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spatialvla"
+version = "1.0.0"
+description = "SpatialVLA: A spatial-enhanced vision-language-action model trained on 1.1 Million real robot episodes."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+dependencies = [
+    "torch==2.5.1+cu121", 
+    "accelerate==1.0.1",
+    "deepspeed==0.15.3",
+    "deepspeed-kernels==0.0.1.dev1698255861",
+    "dlimp @ git+https://github.com/SpatialVLA/dlimp_custom.git",
+    "einops==0.8.0",
+    "numpy==1.26.4",
+    "peft==0.14.0",
+    "pillow==11.0.0",
+    "scipy==1.14.1",
+    "tensorflow==2.15.0",
+    "tensorflow-datasets==4.9.3",
+    "tensorflow-graphics==2021.12.3",
+    "tensorflow-io==0.37.1",
+    "tokenizers==0.21.0",
+    "torchaudio==2.5.1+cu121",
+    "torchvision==0.20.1+cu121",
+    "tqdm==4.66.6",
+    "transformers==4.47.0",
+    "triton==3.1.0",
+]
+
+[project.urls]
+"Homepage" = "https://spatialvla.github.io/"
+"Bug Tracker" = "https://spatialvla.github.io/"
+
+[tool.setuptools.packages.find]
+exclude = [".assets", "dist*", "playground*", "scripts*", "shell*", "test", "outputs"]
+
+[tool.wheel]
+exclude = [".assets", "dist*", "playground*", "scripts*", "shell*", "test", "outputs"]

@@ -1,0 +1,18 @@
+{
+    "num_bins": {
+        "translation": {
+            "theta_bins": 16,
+            "phi_bins": 32,
+            "r_bins": 8
+        },
+        "rotation": {
+            "roll_bins": 16,
+            "pitch_bins": 16,
+            "yaw_bins": 16
+        },
+        "gripper": 2,
+        "total": 8194
+    },
+    "distribution": "gaussian",
+    "use_spherical": true
+}
