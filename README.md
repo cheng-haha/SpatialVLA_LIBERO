@@ -4,11 +4,8 @@
 
 This is the evaluation project of LIBERO for the [spatialvla](https://github.com/SpatialVLA/SpatialVLA) without fine-tuning, yet there are instances where the robot fails to grasp or shakes uncontrollably, leading to an anticipated absolute success rate of 0. ([rollouts/test.mp4](rollouts/test.mp4))
 
-<video src="rollouts/test.mp4" controls width="600"></video>
-
-
 NOTE: unnorm_key = 'droid/1.0.0' with franka robot
-```
+```bash
 # Launch LIBERO-Spatial evals
 python experiments/robot/libero/run_libero_eval.py \
   --model_family svla\
