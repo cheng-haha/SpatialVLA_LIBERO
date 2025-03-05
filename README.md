@@ -1,5 +1,3 @@
-<div align="center">
-
 # SpatialVLA with LIBERO
 
 This is the evaluation project of LIBERO for the [spatialvla](https://github.com/SpatialVLA/SpatialVLA) without fine-tuning, yet there are instances where the robot fails to grasp or shakes uncontrollably, leading to an anticipated absolute success rate of 0. ([rollouts/test.mp4](rollouts/test.mp4))
@@ -36,6 +34,8 @@ python experiments/robot/libero/run_libero_eval.py \
 
 ```
 
+
+<div align="center">
 
 
 # SpatialVLA: Exploring Spatial Representations for Visual-Language-Action Models
