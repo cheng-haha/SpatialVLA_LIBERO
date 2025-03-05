@@ -7,28 +7,28 @@ NOTE: unnorm_key = 'droid/1.0.0' with franka robot
 # Launch LIBERO-Spatial evals
 python experiments/robot/libero/run_libero_eval.py \
   --model_family svla\
-  --pretrained_checkpoint /root/autodl-tmp/spatialvla-4b-224-pt \
+  --pretrained_checkpoint spatialvla-4b-224-pt \
   --task_suite_name libero_spatial \
   --center_crop True
 
 # Launch LIBERO-Object evals
 python experiments/robot/libero/run_libero_eval.py \
   --model_family svla\
-  --pretrained_checkpoint /root/autodl-tmp/spatialvla-4b-224-pt \
+  --pretrained_checkpoint spatialvla-4b-224-pt \
   --task_suite_name libero_object \
   --center_crop True
 
 # Launch LIBERO-Goal evals
 python experiments/robot/libero/run_libero_eval.py \
   --model_family svla\
-  --pretrained_checkpoint openvla/openvla-7b-finetuned-libero-goal \
+  --pretrained_checkpoint spatialvla-4b-224-pt \
   --task_suite_name libero_goal \
   --center_crop True
 
 # Launch LIBERO-10 (LIBERO-Long) evals
 python experiments/robot/libero/run_libero_eval.py \
   --model_family svla\
-  --pretrained_checkpoint openvla/openvla-7b-finetuned-libero-10 \
+  --pretrained_checkpoint spatialvla-4b-224-pt \
   --task_suite_name libero_10 \
   --center_crop True
 
